@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My Choice Coffee</title>
+    <link href="~/Content/333.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel=stylesheet>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel=stylesheet>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel=stylesheet>
+    <script src="~/Content/bootstrap.min.js"></script>
+    <script src="~/Content/jquery-migrate-3.0.1.min.js"></script>
+    <script src="~/Content/jquery.easing.1.3.js"></script>
+    <script src="~/Content/jquery.min.js"></script>
+    <script src="~/Content/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body data-aos-easing="slide bg-dark">
+
+    <!-- Mobile Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/">My Choice <small>Coffee</small></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" onclick="mobilemenu()">
+                <span class="fa fa-bars"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="/Home/Kahvalti" class="nav-link">Kahvaltı</a></li>
+                    <li class="nav-item"><a href="/Home/Baslangic" class="nav-link">Başlangıç </a></li>
+                    <li class="nav-item"><a href="/Home/Pizza" class="nav-link">Pizza</a></li>
+                    <li class="nav-item"><a href="/Home/Burger" class="nav-link">Burger</a></li>
+                    <li class="nav-item"><a href="/Home/Makarna" class="nav-link">Makarna</a></li>
+                    <li class="nav-item"><a href="/Home/Icecekler" class="nav-link">Soğuk &amp; Sıcak İçecekler </a></li>
+                    <li class="nav-item"><a href="/Home/Kokteyl" class="nav-link">Kokteyller</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h2 class="mb-4"></h2>
+
+
+    @RenderBody()
+
+
+    <!-- Başa Dön Butonu-->
+    <section class="ftco-menu mb-5 pb-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                    <br><br>
+                    <p></p>
+                    <p></p>
+                    <p align="center"><a href="/" class="btn btn-primary btn-outline-primary">Başa Dön</a></p>
+                    <br> <br>
+                    <p></p>
+                    <p></p>
+                    <span class="subheading">My Choice Coffee </span>
+                    <h2 class="mb-4"></h2>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="ftco-footer ftco-section img">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class=" col-md-6">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">My Choice Coffee </h2>
+                        <p>Hesabınızı Masada Ödeyiniz. </p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="https://twitter.com/LemanKuItur"><span class="fade fa-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/pages/Leman-K%C3%BClt%C3%BCr-Bursa/1734462403525010"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/lemankulturbursa/"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Bize Ulaşın</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Ataşehir İstanbul</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">0534 xxx xx xx</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">mychoicecoffee.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear());</script>
+                        Dijital Menü by <a href="https://emirdogan.info" target="_blank">EmirDogan.info</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="ftco-loader" class="fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle>
+        </svg>
+    </div>
+    <script>
+        function mobilemenu() {
+            var x = document.getElementById("ftco-nav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+   
+
+
+</html>
